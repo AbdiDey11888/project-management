@@ -1,4 +1,4 @@
-CTYPE html><html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +9,24 @@ CTYPE html><html lang="en">
             margin: 0;
             padding: 0;
             text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
         }
         .header {
             background-color: #2c3e50;
             color: white;
             padding: 20px;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: bold;
         }
         .section {
-            padding: 40px;
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .cta-button {
             background-color: #e74c3c;
@@ -28,14 +37,17 @@ CTYPE html><html lang="en">
             border-radius: 5px;
             display: inline-block;
             margin-top: 20px;
+            transition: 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #c0392b;
         }
         .footer {
             background-color: #34495e;
             color: white;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -49,9 +61,23 @@ CTYPE html><html lang="en">
 <div class="section" id="about">
     <h2>About Us</h2>
     <p>Unlike traditional firms, we don’t just assign project managers—we actively oversee and guide them to guarantee results. Your projects stay on track, always.</p>
+    <h3>Why Choose Us?</h3>
+    <ul style="text-align: left; display: inline-block;">
+        <li>✔ Handpicked project managers with proven success.</li>
+        <li>✔ Active supervision for every project.</li>
+        <li>✔ Focused on delivering real business results.</li>
+        <li>✔ Transparent processes and clear reporting.</li>
+    </ul>
 </div>
 
-<div class="footer">&copy; 2025 Project Management Excellence</div>
+<div class="section" id="contact">
+    <h2>Get in Touch</h2>
+    <p>Let's discuss how we can help your business succeed.</p>
+    <a href="mailto:contact@yourcompany.com" class="cta-button">Email Us</a>
+    <a href="https://calendly.com/yourcompany/consultation" class="cta-button">Schedule a Call</a>
+</div>
+
+<div class="footer">&copy; 2025 Project Management Excellence | <a href="#contact" style="color: white;">Contact Us</a></div>
 
 </body>
 </html>
